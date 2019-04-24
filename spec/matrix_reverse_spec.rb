@@ -17,7 +17,7 @@ RSpec.describe do
 		it 'should return a reverse matrix for 5,4,3,2,1' do 
 			matrix = [5,4,3,2,1]
 			expect(reverse_matrix2(matrix)).to eq([1,2,3,4,5])
-			ap matrix
+			# ap matrix
 		end
 	end
 
@@ -27,7 +27,7 @@ RSpec.describe do
 		it 'should return a reverse matrix' do
 			matrix = [1,2,3,4,5]
 			expect(reverse_matrix1(matrix)).to eq([5,4,3,2,1])
-			ap matrix
+			# ap matrix
 		end
 		it 'should return a reverse matrix for 5,4,3,2,1' do 
 			matrix = [5,4,3,2,1]
