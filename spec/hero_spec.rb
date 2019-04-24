@@ -17,8 +17,8 @@ RSpec.describe Hero do
 		# @important
 		it 'should return a invalid hero' do
 			hero.set_name(nil); hero.set_level(nil)
-			expect(hero.name).to eq('Sam Harris')
-			expect(hero.level).to eq(15)
+			expect(hero.name).not_to eq('Sam Harris')
+			expect(hero.level).not_to eq(15)
 		end
 	end
 
