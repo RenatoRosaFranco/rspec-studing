@@ -37,6 +37,20 @@ RSpec.describe Hero do
 			expect(hero.show_level).to eq(40)
 		end
 
+		# Return empty hero name
+		# @implemented
+		it 'should return a empty hero name' do
+			hero.set_name(nil)
+			expect(hero.show_name).to eq(nil)
+		end
+		 
+		# Return empty hero level
+		# @implemented
+		it 'should return a empty hero level' do
+			hero.set_level(nil)
+			expect(hero.show_level).to eq(nil)
+		end	
+
 		# Return hero Swords
 		it 'should return hero swords' do
 			swords = ['Sword of Valor', 'Excalibur']
